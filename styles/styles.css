@@ -1,0 +1,133 @@
+header {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    background-image: url("../resources/cheatsheet.jpg");
+    background-position-y: 275px;
+}
+
+.longcodepic {
+    max-width: 832px;
+    max-height: 448px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', Helvetica, sans-serif;
+}
+
+section {
+    background-color: rgb(0, 0, 0);
+    color: rgb(225, 255, 114);
+    padding: 20px;
+}
+
+.hypebox {
+    color: rgb(255, 255, 255);
+}
+
+
+.boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.start {
+    display: inline;
+    color: rgb(63, 201, 22);
+}
+
+.abc {
+    display: flex;
+    margin: 15px;
+    width: auto;
+    background-color: grey;
+    min-height: 75px;
+    min-width: 20px;
+    flex-grow: 1;
+    padding: 25px;
+    font-size: large;
+}
+
+.abc > a {
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+    margin-top: 15px;
+}
+
+ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    margin-right: 0px;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+    color: white;
+}
+
+a:visited {
+    color:rgb(196, 238, 224);
+}
+
+a:hover {
+    color:blue;
+}
+
+a:link {
+    color:white;
+}
+
+.html-readmore {
+    font-style: italic;
+}
+
+footer {
+    background-color: black;
+    padding: 10px 20px;
+}
+
+.hyper {
+    color:lime;
+}
+
+.casc {
+    color:blue;
+}
+
+.about-title {
+    color:blueviolet;
+}
+
+.html-pic {
+    max-width: 832px;
+    max-height: 448px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.css-pic {
+    max-width: 832px;
+    max-height: 448px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-pic {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
