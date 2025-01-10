@@ -1,9 +1,18 @@
 header {
-    color: rgb(186, 2, 2);
-    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(3, 230, 116);
+    font-family: "Jersey 15", serif;
     padding: 20px;
     background-image: url("../resources/cheatsheet.jpg");
     background-position-y: 275px;
+}
+
+.cheatsheet-header {
+    font-size: 65px;
+    font-weight: 300;
+}
+
+.nav-link {
+    font-size: 30px;
 }
 
 .nav-link:visited {
@@ -23,10 +32,10 @@ header {
 }
 
 body {
-    color: white;
     margin: 0;
     padding: 0;
-    font-family: 'Work Sans', Helvetica, sans-serif;
+    font-family: 'Jersey 15', serif;
+    font-size: 20px;
 }
 
 section {
@@ -35,17 +44,14 @@ section {
     padding: 20px;
 }
 
-.abc > a:visited {
+.box-style > a:visited {
     color:rgb(63, 201, 22);
 }
 
-.abc > a:hover {
+.box-style > a:hover {
     color: rgb(225, 255, 114)
 }
 
-.csbox {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-}
 
 .boxes {
     display: flex;
@@ -58,21 +64,22 @@ section {
     color: rgb(63, 201, 22);
 }
 
-.abc {
+.box-style {
     display: flex;
-    margin: 15px;
+    margin: 10px;
     width: auto;
     background-color: grey;
     min-height: 75px;
     min-width: 20px;
     flex-grow: 1;
     padding: 25px;
-    font-size: large;
+    font-size: 25px;
+    max-width: 20%;
 }
 
-.abc > a {
-    margin-left: 30%;
-    margin-right: 30%;
+.box-style > a {
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     margin-top: 15px;
 }
@@ -98,7 +105,15 @@ a:link {
     color:white;
 }
 
+.css-readmore {
+    font-style: italic;
+}
+
 .html-readmore {
+    font-style: italic;
+}
+
+.about-readmore {
     font-style: italic;
 }
 
@@ -109,14 +124,20 @@ footer {
 
 .hyper {
     color:lime;
+    font-size: 35px;
+    font-weight: 300;
 }
 
 .casc {
     color:blue;
+    font-size: 35px;
+    font-weight: 400;
 }
 
 .about-title {
     color:blueviolet;
+    font-size: 35px;
+    font-weight: 300;
 }
 
 .html-pic {
