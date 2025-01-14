@@ -15,13 +15,13 @@
     <header>
         <nav>
             <ul>
-                <li><a href=index.html>Cheatsheet!</a></li>
-                <li><a href="html.html">html</a></li>
-                <li><a href="css.html">css</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a class="nav-link" href=index.html>Cheatsheet!</a></li>
+                <li><a class="nav-link" href="html.html">html</a></li>
+                <li><a class="nav-link" href="css.html">css</a></li>
+                <li><a class="nav-link" href="about.html">About</a></li>
             </ul>
         </nav>
-        <h1>html</h1>
+        <h1 class="cheatsheet-header">html</h1>
     </header>
 
     <section>
@@ -33,6 +33,7 @@
     <section>
         <h2>HTML</h2>
         <p>HyperText Markup Language is not a programing language like C++ or Java. It is a markup language. A markup language is a set of instructions on how to create a document like a webpage. The current standard is HTML5. It is the first substantial update since 1999.<br></p>
+        <h2 class="elements-start">Elements</h2>
         <p>"HyperText" refers to links that connect web pages to one another, either within a single website or between websites. HTML uses "markup" to annotate text, images, and other content for display in a Web browser. HTML markup includes special "elements" such as...</p>
     </section>
 
@@ -49,47 +50,47 @@
     <section>
         <p>These elements help give your site structure for both the site itself and anyone who might be reading/adjusting your code. Lets dive into each of these elements...</p>
     </section>
-    <section id="head_section">
-        <h2>&lt;head&gt;</h2>
+    <details id="head_section">
+        <summary>&lt;head&gt;</summary>
         <p>The &lt;head&gt; element is a container for metadata (or data about data) and it is placed between the &lt;html&gt; and the &lt;body&gt; tag. HTML metadata is data <em>about</em> the HTML document. Metadata is not displayed. Metadata typically define the document title, character set, style, scripts, and other meta information</p>
         <img class="headpic" src="./resources/headexample.jpg" alt="&lt;head&gt;">
-    </section>
+    </details>
     
-    <section id="title_section">
-        <h2>&lt;title&gt;</h2>
+    <details id="title_section">
+        <summary>&lt;title&gt;</summary>
         <p>The &lt;title&gt; element defines the title of the document. The title must be text-only, and it is sown in the browser's title bar or in the page's tab. The content of a page title is very important for search engine optimization (SEO)! The page title is used by serach engine algorithms to decide the order when listing pages in search results. 
         </p>
         <img class="titlepic" src="./resources/titleexample.jpg" alt="&lt;title&gt;">
-    </section>
+    </details>
 
-    <section id="body_section">
-        <h2>&lt;body&gt;</h2>
+    <details id="body_section">
+        <summary>&lt;body&gt;</summary>
         <p>The &lt;body&gt; tag defines the document's body. The &lt;body&gt; element contains all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc. <b><u>Note:</u></b> There can only be one &lt;body&gt; element in an HTML document.</p>
         <img class="bodypic" src="./resources/bodyexample.jpg" alt="&lt;body&gt;">
-    </section>
+    </details>
 
-    <section>
-        <h2>&lt;div&gt;</h2>
+    <details>
+        <summary>&lt;div&gt;</summary>
         <p>&lt;div&gt; (where div is short for 'division') is used to define a particular portion of a page.The &lt;div&gt; element is by defailt a block element, meaning that it takes all available width, and comes with line breaks before and after. The &lt;div&gt; is usually given a class or id so that you are able to stlye or adjust it from other languages (i.e. CSS adding color/styling and JavaScript for animations/funcationality. </p>
         <img class="div-example" src="./resources/divexample.jpg" alt="&lt;div&gt; code">
         <img class="div-site-ex" src="./resources/divsitepic.jpg" alt="site &lt;div&gt; site example">
-    </section>
+    </details>
 
-    <section id="body_section">
-        <h2>&lt;body&gt;</h2>
+    <details id="body_section">
+        <summary>&lt;body&gt;</summary>
         <p>The &lt;body&gt; tag defines the document's body. The &lt;body&gt; element contains all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc. <b><u>Note:</u></b> There can only be one &lt;body&gt; element in an HTML document.</p>
         <img class="bodypic" src="./resources/bodyexample.jpg" alt="&lt;body&gt;">
-    </section>
+    </details>
     
-    <section id="li_section">
-        <h2>&lt;li&gt;</h2>
+    <details id="li_section">
+        <summary>&lt;li&gt;</summary>
         <p>The &lt;li&gt; ('meaning List Item') element is used to represent an item in a list. It must be contained in a parent element: an ordered list (&lt;ol&gt;), an unordered list (&lt;ul&gt;) or a menu (&lt;menu&gt;). In menus and unordered lists, list items are usually displayed using bullet points. In ordered lists, they are usually displayed with an ascending counter on the left, such as a number or letter. </p>
         <img class="list-example" src="./resources/listexample.jpg" alt="&lt;li&gt;">
         <img class="list-site-ex" src="./resources/listsiteexample.jpg" alt="site &lt;li&gt;">
-    </section>
+    </details>
     
-    <section id="anchor_section">
-        <h2>&lt;a&gt;</h2>
+    <details id="anchor_section">
+        <summary>&lt;a&gt;</summary>
         <p>The &lt;a&gt; element is used to create hyperlinks in an HTML document. They hyperlinks can point to other webpages, file on the same server, a location on the same page, or any other URL via the hyperlink reference attribute,<em>href</em>. The <em>href</em> determines the location the anchor element points to. </p>
         <figure>
             <img class="anchorex1" src="./resources/anchorex1.jpg" alt="&lt;a&gt; 1">
@@ -115,13 +116,31 @@
             <img class="anchorsite4" src="./resources/anchorsite5.jpg" alt="Site &lt;a&gt; 4">
             <figcaption> Fig. 6: The URL showcasing linking to a page ooutside of your site.</figcaption>
         </figure>
+    </details>
+
+    <details id="video_section">
+        <summary>&lt;video&gt;</summary>
+        <p>The &lt;video&gt; element embeds a media player for video playback. The src attribute will contain the url to the video. Adding the controls attribute will display vdieo controls in the media player. <em><strong>Note:</strong></em> The content inside the opening and closing tag is shown as a fallback in browsers that don't support the element.</p>
+        <img class="video-pic" src="./resources/videocode.jpg" alt="&lt;video&gt;code">
+        <video class="video-video" src="./resources/codingvideo.mp4" alt="&lt;video&gt; video" controls>Video not supported</video>
+    </details>
+
+    <details id="em_strong_section">
+        <summary>&lt;em&gt;/&lt;strong&gt;</summary>
+        <p>There are a multitude of ways to style and adjust text through HTML. Two of the more basic in-line element adjustors would be &lt;em&gt; and &lt;strong&gt;.<br>-The &lt;em&gt; element emphasizes text and browsers will usually <em>italicize</em> the emphasized text by default.<br>-The &lt;strong&gt; element highlights important, serious, or urgent text and browsers will normally render this highlighted text in <strong>bold</strong> by default.</p>
+        <img class="emstrong-code" src="./resources/emstrongpic.jpg" alt="&lt;em&gt;/&lt;strong&gt; code">
+        <img class="emstrong-ex" src="./resources/emstrongex.jpg" alt="&lt;em&gt;/&lt;strong&gt; example">
+    </details>
+
+    <section id="tables-start">
+        <h2>Tables</h2>
+        <p>HTML tables allow web developers to arrange data into rows and columns. To set up a table in HTML, there are several tags that are implemented.</p>
+        <table>
+            
+        </table>
     </section>
 
-    <section id="">
-        <h2>&lt;&gt;</h2>
-        <p></p>
-        <img class="" src="" alt="&lt;&gt;">
-    </section>
+
 
 
     <footer id="footer">
