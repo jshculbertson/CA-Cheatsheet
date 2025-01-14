@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
-    <title>J.C.'s Cheatsheet!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
+    <title>J.C.'s Cheatsheet-HTML</title>
 </head>
 
 <body>
@@ -19,13 +23,111 @@
         </nav>
         <h1>html</h1>
     </header>
+
     <section>
         <div>a</div>
         <div>b</div>
         <div>c</div>
     </section>
-    <section>lower-section</section>
-    <footer>footer</footer>
+
+    <section>
+        <h2>HTML</h2>
+        <p>HyperText Markup Language is not a programing language like C++ or Java. It is a markup language. A markup language is a set of instructions on how to create a document like a webpage. The current standard is HTML5. It is the first substantial update since 1999.<br></p>
+        <p>"HyperText" refers to links that connect web pages to one another, either within a single website or between websites. HTML uses "markup" to annotate text, images, and other content for display in a Web browser. HTML markup includes special "elements" such as...</p>
+    </section>
+
+    <section id="html_tags_section">
+            <ol class="html-tags-list">
+                <li class="head-tag">&lt;head&gt;</li>
+                <li>&lt;title&gt;</li>
+                <li>&lt;body&gt;</li>
+                <li>&lt;div&gt;</li>
+                <li>&lt;li&gt;</li>
+                <li>and many more</li>
+            </ol>
+    </section>
+    <section>
+        <p>These elements help give your site structure for both the site itself and anyone who might be reading/adjusting your code. Lets dive into each of these elements...</p>
+    </section>
+    <section id="head_section">
+        <h2>&lt;head&gt;</h2>
+        <p>The &lt;head&gt; element is a container for metadata (or data about data) and it is placed between the &lt;html&gt; and the &lt;body&gt; tag. HTML metadata is data <em>about</em> the HTML document. Metadata is not displayed. Metadata typically define the document title, character set, style, scripts, and other meta information</p>
+        <img class="headpic" src="./resources/headexample.jpg" alt="&lt;head&gt;">
+    </section>
+    
+    <section id="title_section">
+        <h2>&lt;title&gt;</h2>
+        <p>The &lt;title&gt; element defines the title of the document. The title must be text-only, and it is sown in the browser's title bar or in the page's tab. The content of a page title is very important for search engine optimization (SEO)! The page title is used by serach engine algorithms to decide the order when listing pages in search results. 
+        </p>
+        <img class="titlepic" src="./resources/titleexample.jpg" alt="&lt;title&gt;">
+    </section>
+
+    <section id="body_section">
+        <h2>&lt;body&gt;</h2>
+        <p>The &lt;body&gt; tag defines the document's body. The &lt;body&gt; element contains all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc. <b><u>Note:</u></b> There can only be one &lt;body&gt; element in an HTML document.</p>
+        <img class="bodypic" src="./resources/bodyexample.jpg" alt="&lt;body&gt;">
+    </section>
+
+    <section>
+        <h2>&lt;div&gt;</h2>
+        <p>&lt;div&gt; (where div is short for 'division') is used to define a particular portion of a page.The &lt;div&gt; element is by defailt a block element, meaning that it takes all available width, and comes with line breaks before and after. The &lt;div&gt; is usually given a class or id so that you are able to stlye or adjust it from other languages (i.e. CSS adding color/styling and JavaScript for animations/funcationality. </p>
+        <img class="div-example" src="./resources/divexample.jpg" alt="&lt;div&gt; code">
+        <img class="div-site-ex" src="./resources/divsitepic.jpg" alt="site &lt;div&gt; site example">
+    </section>
+
+    <section id="body_section">
+        <h2>&lt;body&gt;</h2>
+        <p>The &lt;body&gt; tag defines the document's body. The &lt;body&gt; element contains all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc. <b><u>Note:</u></b> There can only be one &lt;body&gt; element in an HTML document.</p>
+        <img class="bodypic" src="./resources/bodyexample.jpg" alt="&lt;body&gt;">
+    </section>
+    
+    <section id="li_section">
+        <h2>&lt;li&gt;</h2>
+        <p>The &lt;li&gt; ('meaning List Item') element is used to represent an item in a list. It must be contained in a parent element: an ordered list (&lt;ol&gt;), an unordered list (&lt;ul&gt;) or a menu (&lt;menu&gt;). In menus and unordered lists, list items are usually displayed using bullet points. In ordered lists, they are usually displayed with an ascending counter on the left, such as a number or letter. </p>
+        <img class="list-example" src="./resources/listexample.jpg" alt="&lt;li&gt;">
+        <img class="list-site-ex" src="./resources/listsiteexample.jpg" alt="site &lt;li&gt;">
+    </section>
+    
+    <section id="anchor_section">
+        <h2>&lt;a&gt;</h2>
+        <p>The &lt;a&gt; element is used to create hyperlinks in an HTML document. They hyperlinks can point to other webpages, file on the same server, a location on the same page, or any other URL via the hyperlink reference attribute,<em>href</em>. The <em>href</em> determines the location the anchor element points to. </p>
+        <figure>
+            <img class="anchorex1" src="./resources/anchorex1.jpg" alt="&lt;a&gt; 1">
+            <figcaption> Fig. 1: The code for linking to a page on your site.</figcaption>
+        </figure>
+        <figure>
+            <img class="anchorex2" src="./resources/anchorex2.jpg" alt="&lt;a&gt; 2">
+            <figcaption> Fig. 2: The code for linking to a page on your site.</figcaption>
+        </figure>
+        <figure>
+            <img class="anchorsite1" src="./resources/anchorsite1.jpg" alt="Site &lt;a&gt; 1">
+            <figcaption> Fig. 3: The &lt;a&gt; link on the site referencing another page on the site.</figcaption>
+        </figure>
+        <figure>
+            <img class="anchorsite2" src="./resources/anchorsite2.jpg" alt="Site &lt;a&gt; 2">
+            <figcaption>Fig. 4: The URL showcasing the &lt;a&gt; redirecting to another page on the site.</figcaption>
+        </figure>
+        <figure>
+            <img class="anchorsite3" src="./resources/anchorsite3.jpg" alt="Site &lt;a&gt; 3">
+            <figcaption>Fig. 5: Images can also contain an &lt;a&gt; tag. This will cause the whole image to become a link as shown.</figcaption>
+        </figure>
+        <figure>
+            <img class="anchorsite4" src="./resources/anchorsite5.jpg" alt="Site &lt;a&gt; 4">
+            <figcaption> Fig. 6: The URL showcasing linking to a page ooutside of your site.</figcaption>
+        </figure>
+    </section>
+
+    <section id="">
+        <h2>&lt;&gt;</h2>
+        <p></p>
+        <img class="" src="" alt="&lt;&gt;">
+    </section>
+
+
+    <footer id="footer">
+        <a class="github" href="https://github.com/jshculbertson" target="_blank" title="Github">J.C.s Github |</a>
+        <a class="linkedin" href="https://www.linkedin.com/in/joshua-culbertson-87676422b" target="_blank" title="LinkedIn">| LinkedIn</a>
+    </footer>
 
 
 
