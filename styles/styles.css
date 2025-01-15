@@ -432,3 +432,7 @@ table {
 summary {
     margin-left: 5%;
 }
+
+details > p {
+    margin-left: 10%;
+}
