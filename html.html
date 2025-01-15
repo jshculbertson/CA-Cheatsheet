@@ -24,16 +24,22 @@
         <h1 class="cheatsheet-header">html</h1>
     </header>
 
-    <section>
-        <div>a</div>
-        <div>b</div>
-        <div>c</div>
+    <section class="boxes">
+        <div class="box-style"><a href="#html_overview">HTML Overview</a></div>
+        <div class="box-style"><a href="#elements-start">Elements</a></div>
+        <div class="box-style"><a href="#tables-start">Tables</a></div>
     </section>
 
-    <section>
+    <section id="html_overview">
         <h2>HTML</h2>
-        <p>HyperText Markup Language is not a programing language like C++ or Java. It is a markup language. A markup language is a set of instructions on how to create a document like a webpage. The current standard is HTML5. It is the first substantial update since 1999.<br></p>
-        <h2 class="elements-start">Elements</h2>
+        <p>HyperText Markup Language is not a programing language like C++ or Java. It is a markup language. A markup language is a set of instructions on how to create a document like a webpage. The current standard is HTML5. It is the first substantial update since 1999.</p>
+        <h2>Document Type Declaration</h2>
+        <p>The document type declaration (&lt;!DOCTYPE HTML&gt;) is required as the first line of an HTML document (before the &lt;head&gt; element). The doctype declaration is an instruction to the browser about what type of document to expect and which version of HTML is being used, in this case it's HTML5</p>
+        <img class="doctype-dec-pic" src="./resources/doctypeexample.jpg" alt="&lt;!DOCTYPE HTML&gt;">
+    </section>
+
+    <section id="elements-start">
+        <h2>Elements</h2>
         <p>"HyperText" refers to links that connect web pages to one another, either within a single website or between websites. HTML uses "markup" to annotate text, images, and other content for display in a Web browser. HTML markup includes special "elements" such as...</p>
     </section>
 
@@ -135,9 +141,72 @@
     <section id="tables-start">
         <h2>Tables</h2>
         <p>HTML tables allow web developers to arrange data into rows and columns. To set up a table in HTML, there are several tags that are implemented.</p>
-        <table>
-            
+        <table class="table-example">
+            <thead>
+            <tr>
+                <td></td>
+                <th>Heading 1</th>
+                <th>Heading 2</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Row Heading 1</th>
+                    <td>Column 1</td>
+                    <td>Column 2</td>
+                </tr>
+                <tr>
+                    <th>Row Heading 2</th>
+                    <td>Table Data 1</td>
+                    <td>Table Data 2</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Footer Section</td>
+                    <td>Footer Summary of Column 1</td>
+                    <td>Footer Summary of Column 1</td>
+                </tr>
+            </tfoot>
         </table>
+    </section>
+    <section id="tables_details_section">
+        <p>Now we can go over each individual part of the &lt;table&gt; element...</p>
+        <details class="table-element-section">
+            <summary>&lt;table&gt;</summary>
+            <p>In HTML, the &lt;table&gt; element has content that is used to represent a two-dimensional table made of rows and columns. This is the foundation for the table shown above.</p>
+            <img class="tablepic" src="./resources/tablebaseex.jpg" alt="&lt;table&gt;">
+        </details>
+
+        <details class="thead_section">
+            <summary>&lt;thead&gt;</summary>
+            <p>The table head element, (&lt;thead&gt;), defines the headings of table columns encapsulated in table rows. </p>
+            <img class="theadpic" src="./resources/theadex.jpg" alt="&lt;thead&gt;">
+        </details>
+
+        <details class="table_heading_details">
+            <summary>&lt;th&gt;</summary>
+            <p>The table heading element, (&lt;th&gt;), is used to add titles to rows and columns of a table and must be enclosed in a table row element (&lt;tr&gt;).</p>
+            <img class="thpic" src="./resources/thexample.jpg" alt="&lt;th&gt;">
+        </details>
+
+        <details class="table_body_details">
+            <summary>&lt;tbody&gt;</summary>
+            <p>The table body element (&lt;tbody&gt;), is a semantic element that will contain all table data other than table heading and table footer content. If used, &lt;tbody&gt; will contain all table row (&lt;tr&gt;) elements, and indicates that &lt;tr&gt; elements make up the doby of the table. &lt;table&gt; cannot have both &lt;tbody&gt; and &lt;tr&gt; as direct children.</p>
+            <img class="tbodypic" src="./resources/tbodyex.jpg" alt="&lt;tbody&gt;">
+        </details>
+
+        <details class="table_row_details">
+            <summary>&lt;tr&gt;</summary>
+            <p>The table row element (&lt;tr&gt;), is used to add rows to a table before adding table data and table headings.</p>
+            <img class="trpic" src="./resources/trexample.jpg" alt="&lt;tr&gt;">
+        </details>
+
+        <details class="table_data_section">
+            <summary>&lt;td&gt;</summary>
+            <p>The table data element (&lt;td&gt;), can be nested inside a table row element (&lt;tr&gt;), to add a cell of data to a table.</p>
+            <img class="tdpic" src="./resources/tdexample.jpg" alt="&lt;td&gt;">
+        </details>
     </section>
 
 

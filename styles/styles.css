@@ -356,3 +356,79 @@ summary {
     margin-right: auto;
     padding-bottom: 1.5rem;
 }
+
+table, th, td {
+    border: solid yellow 1px;
+    border-collapse: collapse;
+}
+
+table {
+    width: 100%;
+}
+
+.tablepic {
+    max-width: 832px;
+    max-height: 448px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1.5rem; 
+}
+
+.theadpic {
+    max-width: 832px;
+    max-height: 448px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1.5rem; 
+}
+
+.thpic {
+    max-width: 832px;
+    max-height: 448px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1.5rem; 
+}
+
+.tbodypic {
+    max-width: 832px;
+    max-height: 448px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1.5rem; 
+}
+
+.trpic {
+    max-width: 832px;
+    max-height: 448px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1.5rem; 
+}
+
+.tdpic {
+    max-width: 832px;
+    max-height: 448px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1.5rem; 
+}
+
+.doctype-dec-pic {
+    max-width: 832px;
+    max-height: 448px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1.5rem; 
+}
+
+summary {
+    margin-left: 5%;
+}
