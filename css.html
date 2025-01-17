@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
-    <title>J.C.'s CheatSheet-CSS</title>
 </head>
 
 <body>
@@ -23,11 +22,248 @@
         </nav>
         <h1 class="cheatsheet-header">css</h1> 
     </header>
+
     <section>
-        <div>a</div>
-        <div>b</div>
-        <div>c</div>
+        <h2>CSS</h2>
+        <p>CSS stands for Cascading Stylesheet. The "cascading" portion of the name describes that there is a hierarchy of style attributes overwriting others that affect the same element. HTML defines content for a web page and CSS decorates it and helps tell how it is displayed.</p>
     </section>
+
+    <section class="cssboxes">
+        <div class="box-style">Syntax & Setup</div>
+        <div class="box-style">Class & ID Selectors</div>
+        <div class="box-style">Visual Rules</div>
+        <div class="box-style">The Box Model</div>
+        <div class="box-style">Display & Positioning</div>
+        <div class="box-style">Colors</div>
+        <div class="box-style">Typography</div>
+    </section>
+
+
+    <section>
+        <h2>Syntax & Setup</h2>
+    <details>
+        <summary>Separate HTML code from CSS code</summary>
+        <p>It is common practice to separate content code in HTML files from styling code in CSS files. This can help make the code easier to maintain, by keeping the syntax for each file separate, and any changes to the content or styling can be made in their respective files.</p>
+    </details>
+
+    <details>
+        <summary>Write CSS in Separate Files</summary>
+        <p>CSS code can be written in its own files to keep it from the HTML code. The extension for CSS files is <em>.css</em>. These can be linked to an HTML file using a <em>&lt;link&gt;</em> tag in the <em>&lt;head&gt;</em> section.</p>
+        <p>CSS code can be written in an HTML file as well by enclosing the code in <em>&lt;style&gt;</em> tags. Code surrounded by <em>&lt;style&gt;</em> tags will be interpreted as CSS syntax.</p>
+    </details>
+
+    <details>
+        <summary>Inline Styles</summary>
+        <p>CSS style can also be directly added to HTML elements by using the <em>style</em> attribute in the element's opening tag. Each style declaration is ended with a semicolon. Styles added in this manner are known as <em>inline styles</em>.</p>
+    </details>
+    </section>
+
+    <section>
+        <h2>Class and ID Selectors</h2>
+        <details>
+            <summary>Class/ID</summary>
+            <p>CSS classes can be reusable and applied to many elements. Class selector are denoted with a period (.) followed by the class name. CSS ID selectors should be unique and used to style only a single element. ID selectors are denoted with a hash sign (#) followed by the id name. <strong><em>NOTE:</em></strong> Remember to set the class/ID on the html element you wish to style.</p>
+
+            <p>You can also match multiple selectors to the same CSS rule, using a comma-separated list. In this example, the text for both <em>h1</em> and <em>h2</em> is set to red.</p>
+        </details>
+    
+        <details>
+            <summary>Type Selectors</summary>
+            <p>CSS <em>type selectors</em> are used to match all elements of a given type or tag name. Unlike for HTML syntax, we do not include the angle brackets when using type selectors for tag names. When using type selectors, elements are matched regardless of their nesting level in the HTML.</p>
+        </details>
+    </section>
+
+    <section>
+        <h2>Visual Rules</h2>
+        <details>
+            <summary>CSS Declarations</summary>
+            <p>In CSS, a <em>declaration</em> is the key-value pair of a CSS property and its value. CSS declarations are used to set style properties and construct rules to apply to individual or groups of elements. The property name and value are separated by a colon, and the entire declaration must be terminated by a semi-colon.</p>
+        </details>
+        
+        <details>
+        <summary>Font Size</summary>
+        
+        <p>The <em>font-size</em> property is used to set text sizes. Font sizes values can be many different units or types such as pixels.</p>
+        </details>
+
+        <details>
+            <summary>Background Color</summary>
+            <p>The <em>background-color</em> property controls the background color of elements.</p>
+        </details>
+
+        <details>
+            <summary>Opacity</summary>
+            <p>The <em>opacity</em> property can be used to control the transparency of an element. The value of this property ranges from <em>0</em> (transparent) to <em>1</em> (opaque).</p>
+        </details>
+
+        <details>
+            <summary>Font Weight</summary>
+            <p>The <em>font-weight</em> property can be used to set the thick or thinness, called <em>weight</em> (boldness) of text. The provided value can be a keyword such as <em>bold</em> or <em>normal</em> and even numerical values.</p>
+            <p>Numerical values can also be used. The numeric scale range of this property is from <em>100</em> to <em>900</em> and accepts only multiples of 100. The default value is <em>normal</em> while the default numerican value is <em>400</em>.Any value less than <em>400</em> will have text appear lighter than the default while any numerical value greater than the <em>400</em> will appear bolder.</p>
+        </details>
+
+        <details>
+            <summary>Text Align</summary>
+            <p>The <em>text-align</em> property can be used to set the text alignment of inline contents. This property can be set to these values: <em>left</em>, <em>right</em>, or <em>center</em>.</p>
+        </details>
+    
+        <details>
+            <summary>Rule Sets</summary>
+            <p>A rule set contains one or more selectors and one or more declarations. The selector(s), which in this example is <em>h1</em>, points to an HTML element. The declaration(s), which in this example are <em>color: blue</em> and <em>text-align: center</em> style the element with a property and value. The rule set is the main building block of a CSS sheet.</p>
+        </details>
+
+        <details>
+            <summary>Resource URLs</summary>
+            <p>The <em>url()</em> function is used to wrap resource URLs. These can be applied to several properties such as the <em>background-image</em>.</p>
+        </details>
+    
+        <details>
+            <summary>Background Image</summary>
+            <p>The <em>background-image</em> property sets the background image of an element. An image URL should be provided in the syntax [<em>url("moon.jpg")</em>] as the value of the property.</p>
+        </details>
+
+        <details>
+            <summary>Font Family</summary>
+            <p>The <em>font-family</em> CSS property is used to specify the typeface in a rule set. Fonts must be available to the browser to display correctly, either on the computer or linked as a web font. If a font value is not available, browsers will display their default font. When using a multi-word font name, it is best practice to wrap them in quotes.<strong><em>Note:</em></strong> See the best practices for using Google Fonts here...</p>
+        </details>
+    </section>
+
+    <section>
+        <h2>The Box Model</h2>
+        <p>The CSS <em>box model</em> is a box that wrraps around an HTML element and controls the design and layout. The property <em>box-sizing</em> controls which aspect of the box is determined by the <em>height</em> and <em>width</em> properties. The default value of this property is <em>content-box</em>, which renders the actual size of the element including the content box; but not the paddings and borders. The value <em>border-box</em>, on the other hand, render the actual size of an element including the content box, paddings, and borders.</p>
+
+        <details>
+            <summary><em>box-sizing: border-box</em></summary>
+            <p>The value <em>border-box</em> of the <em>box-sizing</em> property for an element corresponds directly to the element's total rendered size, inlcuding padding and border with the <em>height</em> and <em>width</em> properties.</p>
+            <p>The default value of the <em>box-sizing</em> property is <em>content-box</em>. The value <em>border-box</em> is recommended when it is necessary to resize the <em>padding</em> and <em>border</em> but not just the content. For instance, the value <em>border-box</em> calculates an element's <em>height</em> as follows: <em>height = content + padding + border</em>.</p>
+        </details>
+
+        <details>
+            <summary>Margin Collapse</summary>
+            <p><em>Margin Collapse</em> occurs when the top and bottom margin of blocks are combinded into a single margin equal to the largest individual block margin. Margin collapse only occurs with vertical margins, not for horizontal margins.</p>
+        </details>
+
+        <details>
+            <summary><em>Auto</em> Keyword</summary>
+        <p>The value <em>auto</em> can be used with the property <em>margin</em> to horizontally center an element within its container. The <em>margin</em> property will take the width of the element and will split the rest of the space equally between the left and right margins.</p>
+        </details>
+
+        <details>
+            <summary>Dealing with <em>overflow</em></summary>
+            <p>If content is too large for its container, the <em>overflow</em> property will determine how the browser handles the problem.</p>
+            <p>By default, it will be set to visible and the content will take up extra space. It can also be set to <em>hidden</em>, or to <em>scroll</em>, which will make overflowing content accessible via scroll bars within the original container.</p>
+        </details>
+
+        <details>
+            <summary>Height and Width Maximums/Minimums</summary>
+            <p>The <em>min-width</em> and <em>min-height</em> properties can be used to set a minimum width and minimum height of an element's box. CSS <em>max-width</em> and <em>max-height</em> properties can be used to set maximum widths and heights for element boxes.</p>
+        </details>
+
+        <details>
+            <summary>The <em>visibility</em> Property</summary>
+            <p>The <em>visibilty</em> property is used to render <em>hidden</em> objects invisible to the user, without removing them from the page. This ensures that the page structure and organization remains unchanged.</p>
+        </details>
+    </section>
+
+    <section>
+        <h2>Display & Positioning</h2>
+
+        <details>
+            <summary><em>z-index</em> Property</summary>
+            <p>The <em>z-index</em> property specifies how far back or how far forward an element will appear on a web page when it overlaps other elemens.</p>
+            <p>The <em>z-index</em> property use integar values, which can be positive or negative values. The elements with the highest <em>z-index</em> value will be at the foreground, while the element with the lowest <em>z-index</em> will be at the back.</p>
+        </details>
+
+        <details>
+            <summary>Fixed Positioning</summary>
+            <p>Positioning in CSS provides designers and developers options for positioning HTML elements on a web page. The CSS <em>position</em> can be set to <em>static</em>, <em>relative</em>, <em>absolute</em>, or <em>fixed</em>. When the CSS position has a value of <em>fixed</em>, it is set/pinned to a specific spot on a page. The fied element stays the same regardless of scrolling. The navigation bar is a great example of an element that is often set to <em>position: fixed;</em>, enabling the user to scroll through the web page and still access the navigation bar. </p>
+        </details>
+        
+        <details>
+            <summary>Absolute Positioning</summary>
+            <p>The value <em>absolute</em> for the property <em>position</em> enables an element to ignore sibling elements and instead be positioned relavtive to its closest parent element that is positioned with <em>relative</em> or <em>absolute</em>. The <em>absolute</em> value removes an element entirely from the document flow. By using the positioning attributes <em>tops</em>, <em>left</em>, <em>bottom</em>, and <em>right</em>, an element can be positioned anywhere as expected.</p>
+        </details>
+
+        <details>
+            <summary>Relative Positioning</summary>
+            <p>The value <em>relative</em> of the <em>position</em> property enables an element to be positioned relative to where it would have originally been on a web page. The offset properties can be used to determine the actual position of the elements relative to its original position. Without the offset properties, this declaration will hae no effect on its positioning, it will act as the default value <em>static</em> of the<em>position</em> property.</p>
+        </details>
+                
+        <details>
+            <summary><em>display</em> Property</summary>
+            <p>The CSS <em>display</em> property determines the type of render block for an element. The most common values for this property are <em>block</em>, <em>inline</em>, and <em>inline-block</em>.</p>
+            <p><em>block-level</em> elements take up the full width of thir container with line breaks before and after, and can have their eight and width manually adjusted.</p>
+            <p><em>inline</em> elements take up as little space as possible, flow horizontally, and cannot have their width or height manually adjusted.</p>
+            <p><em>inline-block</em> elements can appear next to each other, and can have their width and height manually adjusted.</p>
+        </details>
+
+        <details>
+            <summary><em>float</em> Property</summary>
+            <p>The <em>float</em> property determines how far left or how far right an element should float within its parent element. The value <em>left</em> floats an element to the left side of its container and the value <em>right</em> floats an element to the right side of its container. For the property <em>float</em>, the width of the container must be specified or the element will assume the full width of its containing element.</p>
+        </details>
+    </section>
+
+    <section>
+        <h2>Colors</h2>
+        
+        <details>
+            <summary>Color Alpha Values</summary>
+            <p><em>Alpha values</em> determine the transparency of colors in CSS> Alpha values can be set for both RGB and HSL colors by using <em>rgba()</em> and <em>hsla()</em> and providing a fourth value representing alpha. Alpha values can range between <em>0.0</em> (totally transparent) and <em>1.0</em> (totally opaque).</p>
+            <p>The <em>transparent</em> value can also be used to create a fully transparent element.</p>
+        </details>
+
+        <details>
+            <summary>Hexadecimal Colors</summary>
+            <p>CSS colors can be represented in <em>hexadecimal</em> (or <em>hex</em>) notation. Hexadecimal degits can represent sixteen different values using <em>0</em> - <em>9</em> and <em>a</em> - <em>f</em>.</p>
+            <p>Hexadecimal colors are composed of 6 characters - each group of two represents a value between 0 and 255 for red, green, or blue. For example <em>#ff0000</em> is all red, no green, and no blue.</p>
+            <p>When both characters of all three colors are repeated, hex colors can be abbreviated to only three values, so <em>#0000ff</em> could also be represented as <em>#00f</em>.</p>
+        </details>
+
+        <details>
+            <summary>HSL Colors</summary>
+            <p>CSS colors can be declared with the <em>HSL</em> color system using <em>hsl()</em> syntax. This syntax contains three values: <em>hue</em> (the color value itself), <em>saturation</em> (intensity), and <em>lightness</em>.</p>
+            <p>Hue values range from 0 to 360 while saturation and lightness values are represented as percentages.</p>
+        </details>
+
+        <details>
+            <summary>RGB Colors</summary>
+            <p>CSS colors can be declared with <em>RGB colors</em> using <em>rgb()</em> syntax.</p>
+            <p><em>rgb()</em> should be supplied with three values representing red, green, and blue. These values can range from 0 to 255.</p>
+        </details>
+
+        <details>
+            <summary>Color Name Keywords</summary>
+            <p>Color name keywords can be used to set <em>color:</em> property values for elements in CSS.</p>
+        </details>
+    </section>
+
+    <section>
+        <h2>Typography</h2>
+        <details>
+            <summary><em>font-style</em></summary>
+            <p>The CSS <em>font-style</em> property determines the font style in which text will appear.</p>
+            <p>It accepts <em>italics</em> as a value to set the font style to italic.</p>
+        </details>
+
+        <details>
+            <summary><em>@font-face</em> rule</summary>
+            <p>The <em>font-face</em> rule allows external fonts or font files to be imported directly into stylesheets. The location of the font file must be specified in the CSS rule so that the files can be loaded from that location. This rule also allows locally hosted fonts to be added using a relative file path instead of a web URL.</p>
+        </details>
+
+        <details>
+            <summary>Fallback Fonts</summary>
+            <p>The <em>font-family</em> property can have multiple fonts declared in order of preference. In this case the fonts following the inital font are known as the <em>fallback fonts</em>.</p>
+            <p>If the initial value of the property <em>font-family</em> fails to load to the webpage, the fallback fonts will be used.</p>
+        </details>
+
+        <details>
+            <summary><em>line-height</em> property</summary>
+            <p>The <em>line-height</em> property delcares the vertical spacing between lines of text. It accepts both unitless numbers as a ration (eg. <em>2</em>) and number specified by units as values (eg. <em>12px</em>) but it does not accept negative numbers. A unitless number is an absolute value that will compute the line height as a ration to the font size and a unit number be any valid CSS unit (eg. pixels, percents, ems, rems, etc.). To set the <em>line-height</em> of the <em>&lt;p&gt;</em> to <em>10px</em>, the given CSS declaration can be used.</p>
+        </details>
+    </section>
+
+
+
     <section>lower-section</section>
     <footer>footer</footer>
 </body>
