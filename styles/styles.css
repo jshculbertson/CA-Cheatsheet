@@ -76,7 +76,8 @@ section {
     flex-grow: 1;
     padding: 25px;
     font-size: 25px;
-    max-width: 20%;
+    max-width: 10%;
+
 }
 
 .box-style > a {
@@ -84,6 +85,8 @@ section {
     margin-right: auto;
     text-align: center;
     margin-top: 15px;
+    word-wrap: normal;
+
 }
 
 ul {
@@ -447,4 +450,22 @@ details {
     flex-direction: row;
     justify-content: space-around;
     max-width: 100%;
+}
+
+.css-example-pics {
+    max-width: 832px;
+    max-height: 448px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1.5rem; 
+}
+
+.jc-picture {
+    max-width: 832px;
+    max-height: 448px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1.5rem; 
 }
